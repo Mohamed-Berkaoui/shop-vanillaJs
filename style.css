@@ -1,0 +1,196 @@
+*{
+  padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+body{
+  background-color: blue;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding:0 30px ;
+  height: 100px;
+  color: white;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: absolute;
+  width: 100%;
+  z-index: 300;
+  background-color: rgba(3, 3, 101, 0.087);
+  top: 0;
+}
+nav >div{
+  display: flex;
+  align-items: center;
+  gap:30px
+}
+.nav-left {
+  font-weight: 600;
+}
+
+.nav-left img{
+  height: 40px;
+}
+
+
+/*parite sectoin*/
+
+section{
+height: 120vh;
+min-height: 500px;
+background-image: url(home-new-bg-free-img.jpg);
+background-size: cover;
+background-attachment: fixed;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0 20px;
+color: white;
+gap: 30px;
+position: relative;
+}
+section h2{
+  font-size: 4rem;
+  width: 60%;
+}
+section h4{
+  font-size: 1.8rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.button-white{
+  width: 150px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.button-transparent{
+  width: 150px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.1rem;
+
+}
+section *{
+  z-index: 2;
+}
+
+section::after{
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,rgb(10, 29, 85),black);
+ position: absolute;
+ left:0;
+ opacity: 0.3;
+ z-index: 1;
+}
+
+main {
+  padding: 30px ;
+  display: flex;
+  background-color: white;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box{
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 30px;
+  background-size: cover;
+  gap: 20px;
+  position: relative;
+
+}
+
+.box::after{
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  background-color: gray;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.box *{
+  z-index: 2;
+}
+
+.cart{
+  position: relative;
+  color: white;
+}
+#cart-count{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  
+}
+aside{
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item{
+  display: flex;
+  width: 80%;
+  height: 100px;
+  border: 2px solid white;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 0 10px;
+align-items: center;
+background-color: rgb(28, 171, 248);
+font-size: 1.2rem;
+color: white;
+}
+
+.cart-item div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.cart-item img{
+  height: 100%;
+}
+.cart-item >div button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
